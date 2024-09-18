@@ -3,158 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to [College Name], offering world-class programs in undergraduate and graduate studies.">
+  <meta name="description" content="Welcome to Garsen Technical and Vocational College, offering world-class programs in undergraduate and graduate studies.">
   <meta name="keywords" content="college, university, education, admissions, programs, campus">
 
   <title>Garsen Technical and Vocational College</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <style>
-
-/* style.css */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-    text-align: center;
-    padding: 120px 0;
-}
-
-#hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-#hero .content {
-    position: relative;
-    z-index: 2;
-}
-
-#hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-#hero p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-}
-
-section {
-    padding: 60px 0;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-/* Button Styles */
-.btn {
-    padding: 12px 25px;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    color: #fff;
-}
-
-.btn-secondary {
-    background-color: #6c757d;
-    border: none;
-    color: white;
-}
-
-.btn-secondary:hover {
-    background-color: #565e64;
-    color: #fff;
-}
-
-.btn-outline-primary {
-    background-color: transparent;
-    border: 2px solid #007bff;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.btn-outline-primary:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-.btn-outline-secondary {
-    background-color: transparent;
-    border: 2px solid #6c757d;
-    color: #6c757d;
-    font-weight: bold;
-}
-
-.btn-outline-secondary:hover {
-    background-color: #6c757d;
-    color: white;
-}
-
-
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Custom responsive adjustments */
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 2.5rem;
+    /* Global Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
     }
-    #hero p {
-        font-size: 1rem;
+
+    .navbar {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
+    .hero {
+        background-image: url('hero.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        color: white;
+        text-align: center;
+        padding: 150px 0;
+        background-attachment: fixed;
+    }
+
+    .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+        z-index: 1;
+    }
+
+    .hero .content {
+        position: relative;
+        z-index: 2;
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        text-align: center;
     }
-}
 
+    /* Button Styles */
+    .btn {
+        padding: 12px 25px;
+        border-radius: 50px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background-color: #565e64;
+        color: #fff;
+    }
+
+    footer {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
   </style>
-
 </head>
 <body>
 
@@ -183,7 +170,7 @@ footer a:hover {
             <a class="nav-link" href="news.html">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="news.html">Events</a>
+            <a class="nav-link" href="events.html">Events</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="student-life.html">Student Life</a>
@@ -200,7 +187,7 @@ footer a:hover {
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-light text-white p-5 text-center" id="hero">
+  <header class="hero" id="hero">
     <div class="overlay"></div>
     <div class="content">
       <h1 class="display-4">Welcome to Garsen Technical & Vocational College</h1>
@@ -211,10 +198,10 @@ footer a:hover {
   </header>
 
   <!-- Admissions Section -->
-  <section class="py-5" id="admissions">
+  <section id="admissions">
     <div class="container">
-      <h2 class="text-center">Admissions</h2>
-      <p class="text-center">Find out how to apply and what you need to get started on your academic journey at [College Name].</p>
+      <h2>Admissions</h2>
+      <p class="text-center">Find out how to apply and what you need to get started on your academic journey at Garsen Technical and Vocational College.</p>
       <div class="row">
         <div class="col-md-4">
           <h4>Undergraduate Programs</h4>
@@ -238,7 +225,7 @@ footer a:hover {
   <!-- News Section -->
   <section class="py-5 bg-light" id="news">
     <div class="container">
-      <h2 class="text-center">Latest News</h2>
+      <h2>Latest News</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card">
@@ -274,82 +261,20 @@ footer a:hover {
     </div>
   </section>
 
-  <!-- Events Section -->
-  <section class="py-5" id="events">
+  <!-- Footer -->
+  <footer class="text-center">
     <div class="container">
-      <h2 class="text-center">Upcoming Events</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Event 1</h4>
-          <p>Date: September 15, 2024 | Venue: Auditorium</p>
-        </div>
-        <div class="col-md-6">
-          <h4>Event 2</h4>
-          <p>Date: October 5, 2024 | Venue: Main Hall</p>
-        </div>
+      <p>&copy; 2024 Garsen Technical & Vocational College. All rights reserved.</p>
+      <div>
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">Instagram</a>
       </div>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="py-5 bg-light" id="contact">
-    <div class="container">
-      <h2 class="text-center">Contact Us</h2>
-      <p class="text-center">We're here to help! Reach out to us with any questions you have about our programs or admissions process.</p>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <h4>Our Office</h4>
-          <p>123 College Avenue, Minjila, Kenya.</p>
-          <p>Email: info@college.edu</p>
-          <p>Phone: +1 234 567 890</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>Designed by JACQUES &copy; 2024 GTVC. All Rights Reserved.</p>
-    <p>
-      <a href="#" class="text-white">Privacy Policy</a> |
-      <a href="#" class="text-white">Terms of Service</a>
-    </p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-          
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-               var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                   s1.async=true;
-                   s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
-                   s1.charset='UTF-8';
-                   s1.setAttribute('crossorigin','*');
-                   s0.parentNode.insertBefore(s1,s0);
-            })();
 
-
-
-  </script>
 </body>
 </html>
-
