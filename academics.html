@@ -3,206 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to [College Name], offering world-class programs in undergraduate and graduate studies.">
-  <meta name="keywords" content="college, university, education, admissions, programs, campus">
+  <meta name="description" content="Garsen Technical and Vocational College offers world-class undergraduate and graduate programs designed for student success.">
+  <meta name="keywords" content="Garsen Technical and Vocational College, GTVC, education, undergraduate programs, graduate programs, research, technical college, admissions">
 
   <title>Garsen Technical and Vocational College</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS -->
   <style>
+    /* General Styles */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+    }
 
-/* General Styles */
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-}
+    /* Navbar */
+    .navbar {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .nav-link {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .nav-link:hover {
+        color: #f9b42a !important;
+    }
 
-/* Navbar */
-.navbar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.nav-link {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.nav-link:hover {
-    color: #f9b42a !important; /* Highlight effect on hover */
-}
-
-/* Hero Section */
-#hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    position: relative;
-    padding: 100px 0;
-}
-
-#hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-    z-index: 1;
-}
-
-#hero .content {
-    position: relative;
-    z-index: 2;
-}
-
-#hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-
-#hero p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-}
-
-#hero .btn {
-    padding: 12px 30px;
-    border-radius: 30px;
-}
-
-/* Section Headings */
-h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-}
-
-h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #f9b42a;
-    margin: 10px auto;
-}
-
-/* Content Sections */
-section {
-    padding: 60px 0;
-}
-
-#undergraduate, #graduate, #research, #departments {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px;
-}
-
-#undergraduate p, #graduate p, #research p, #departments p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.btn-outline-primary, .btn-outline-secondary {
-    border-radius: 30px;
-    padding: 10px 25px;
-    font-weight: bold;
-}
-
-/* Button Hover Effect */
-.btn-outline-primary:hover, .btn-outline-secondary:hover {
-    background-color: #f9b42a !important;
-    color: #fff !important;
-    border-color: #f9b42a !important;
-    transition: 0.3s ease;
-}
-
-/* Research Section */
-#research {
-    background-color: #f4f4f9;
-    padding: 40px;
-    border-left: 5px solid #f9b42a;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+    /* Hero Section */
+    #hero {
+        background-image: url('hero-background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        padding: 100px 0;
+    }
+    #hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    #hero .content {
+        position: relative;
+        z-index: 2;
+    }
     #hero h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+    }
+    #hero p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+    #hero .btn {
+        padding: 12px 30px;
+        border-radius: 30px;
     }
 
+    /* Section Headings */
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+    h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #f9b42a;
+        margin: 10px auto;
     }
 
+    /* Content Sections */
+    section {
+        padding: 60px 0;
+    }
     #undergraduate, #graduate, #research, #departments {
-        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 60px;
+        padding: 40px;
+    }
+    p {
+        font-size: 1.1rem;
+        color: #666;
+    }
+    .btn-outline-primary, .btn-outline-secondary {
+        border-radius: 30px;
+        padding: 10px 25px;
+        font-weight: bold;
     }
 
-    .btn {
-        padding: 10px 20px;
+    /* Button Hover Effect */
+    .btn-outline-primary:hover, .btn-outline-secondary:hover {
+        background-color: #f9b42a !important;
+        color: #fff !important;
+        border-color: #f9b42a !important;
+        transition: 0.3s ease;
     }
-}
 
+    /* Footer */
+    footer {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
 
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #hero h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .btn {
+            padding: 10px 20px;
+        }
+    }
   </style>
-
 </head>
+
 <body>
 
-  <!-- Navigation Bar (Same as the main page) -->
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">College Logo</a>
+      <a class="navbar-brand" href="#">GTVC</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="academics.html">Academics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="admissions.html">Admissions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="apply.html">Apply Online</a></li>
         </ul>
       </div>
     </div>
@@ -212,7 +179,7 @@ footer a:hover {
   <header class="bg-light text-white p-5 text-center" id="hero">
     <div class="overlay"></div>
     <div class="content">
-      <h1 class="display-4">Academics at [College Name]</h1>
+      <h1 class="display-4">Academics at Garsen Technical & Vocational College</h1>
       <p>Your academic journey to success starts here. Explore our programs, research opportunities, and departments.</p>
       <a href="#undergraduate" class="btn btn-primary">Undergraduate Programs</a>
       <a href="#graduate" class="btn btn-secondary">Graduate Programs</a>
@@ -220,14 +187,14 @@ footer a:hover {
   </header>
 
   <!-- Undergraduate Programs Section -->
-  <section class="py-5" id="undergraduate">
+  <section id="undergraduate">
     <div class="container">
-      <h2 class="text-center">Undergraduate Programs</h2>
-      <p class="text-center">We offer a variety of undergraduate degrees across different fields. Our programs are designed to equip students with the knowledge and skills they need to succeed.</p>
+      <h2>Undergraduate Programs</h2>
+      <p>We offer a variety of undergraduate degrees across different fields. Our programs are designed to equip students with the knowledge and skills they need to succeed.</p>
       <div class="row">
         <div class="col-md-4">
           <h4>Business Administration</h4>
-          <p>Develop a deep understanding of the principles of business management and entrepreneurship.</p>
+          <p>Develop a deep understanding of business management and entrepreneurship.</p>
           <a href="#" class="btn btn-outline-primary">Learn More</a>
         </div>
         <div class="col-md-4">
@@ -245,83 +212,44 @@ footer a:hover {
   </section>
 
   <!-- Graduate Programs Section -->
-  <section class="py-5 bg-light" id="graduate">
+  <section class="bg-light" id="graduate">
     <div class="container">
-      <h2 class="text-center">Graduate Programs</h2>
-      <p class="text-center">Advance your career and deepen your expertise with our world-class graduate programs.</p>
+      <h2>Graduate Programs</h2>
+      <p>Advance your career and deepen your expertise with our world-class graduate programs.</p>
       <div class="row">
         <div class="col-md-4">
-          <h4>Master of Business Administration (MBA)</h4>
+          <h4>MBA</h4>
           <p>Enhance your leadership and strategic thinking skills with our MBA program.</p>
           <a href="#" class="btn btn-outline-secondary">Learn More</a>
         </div>
         <div class="col-md-4">
-          <h4>Master of Science in Data Science</h4>
-          <p>Become an expert in data analysis, machine learning, and predictive modeling.</p>
+          <h4>MSc Computer Science</h4>
+          <p>Become an expert in computer science with a focus on research and innovation.</p>
           <a href="#" class="btn btn-outline-secondary">Learn More</a>
         </div>
         <div class="col-md-4">
-          <h4>Doctor of Philosophy (Ph.D.)</h4>
-          <p>Engage in groundbreaking research with our Ph.D. programs in various fields.</p>
+          <h4>Master of Engineering</h4>
+          <p>Take your engineering career to the next level with our advanced programs.</p>
           <a href="#" class="btn btn-outline-secondary">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Research Opportunities Section -->
-  <section class="py-5" id="research">
+  <!-- Research Section -->
+  <section id="research">
     <div class="container">
-      <h2 class="text-center">Research Opportunities</h2>
-      <p class="text-center">At [College Name], we are at the forefront of innovation. Join our research programs to contribute to groundbreaking projects.</p>
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Research Centers</h4>
-          <p>Our state-of-the-art research centers focus on areas such as AI, renewable energy, and healthcare innovation.</p>
-          <a href="#" class="btn btn-outline-primary">Learn More</a>
-        </div>
-        <div class="col-md-6">
-          <h4>Faculty Research</h4>
-          <p>Collaborate with world-renowned faculty members on cutting-edge research projects.</p>
-          <a href="#" class="btn btn-outline-primary">Learn More</a>
-        </div>
-      </div>
+      <h2>Research at GTVC</h2>
+      <p>Our research programs aim to solve real-world challenges in fields such as technology, business, and engineering.</p>
+      <a href="research.html" class="btn btn-outline-primary">Explore Our Research</a>
     </div>
   </section>
 
-  <!-- Departments Section -->
-  <section class="py-5 bg-light" id="departments">
-    <div class="container">
-      <h2 class="text-center">Departments</h2>
-      <p class="text-center">Our academic departments are committed to excellence in teaching, research, and service to society.</p>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Department of Arts & Humanities</h4>
-          <p>Explore the rich world of culture, philosophy, history, and creative arts.</p>
-          <a href="#" class="btn btn-outline-secondary">Learn More</a>
-        </div>
-        <div class="col-md-4">
-          <h4>Department of Science & Technology</h4>
-          <p>Join one of the leading departments in scientific and technological research and innovation.</p>
-          <a href="#" class="btn btn-outline-secondary">Learn More</a>
-        </div>
-        <div class="col-md-4">
-          <h4>Department of Business & Economics</h4>
-          <p>Prepare for a global career with our comprehensive business and economics programs.</p>
-          <a href="#" class="btn btn-outline-secondary">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>Designed by JACQUES &copy; 2024 GTVC. All Rights Reserved.</p>
-        <p>
-          <a href="#" class="text-white">Privacy Policy</a> |
-          <a href="#" class="text-white">Terms of Service</a>
-        </p>
-      </footer>
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2024 Garsen Technical and Vocational College. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
