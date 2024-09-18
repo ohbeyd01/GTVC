@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover admissions information for Garsen Technical and Vocational College. Learn about application deadlines, admission criteria, required documents, fees, scholarships, and more.">
+  <meta name="keywords" content="Garsen Technical and Vocational College, GTVC, admissions, apply, application deadlines, admission criteria, scholarships, fees, how to apply">
+  
+  <title>Admissions - Garsen Technical and Vocational College</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <style>
+    /* Global Styles */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+    }
+
+    /* Navbar */
+    .navbar {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .nav-link.active {
+        color: #f9b42a !important;
+    }
+
+    .nav-link:hover {
+        color: #f9b42a !important;
+    }
+
+    /* Hero Section */
+    #hero {
+        background-image: url('hero-admissions.jpg'); /* Replace with your hero image */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        padding: 150px 0;
+    }
+
+    #hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    #hero .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    #hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    #hero p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+
+    /* Admissions Sections */
+    section {
+        padding: 60px 0;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #f9b42a;
+        margin: 10px auto;
+    }
+
+    .admissions-section {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        margin-bottom: 60px;
+    }
+
+    .admissions-section h4 {
+        font-size: 1.3rem;
+        margin-top: 15px;
+        color: #333;
+    }
+
+    .admissions-section ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    /* Button Styles */
+    .btn {
+        padding: 12px 25px;
+        border-radius: 50px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background-color: #565e64;
+        color: #fff;
+    }
+
+    .btn-outline-primary, .btn-outline-secondary {
+        border-radius: 30px;
+        padding: 10px 25px;
+        font-weight: bold;
+    }
+
+    .btn-outline-primary:hover, .btn-outline-secondary:hover {
+        background-color: #f9b42a !important;
+        color: #fff !important;
+        border-color: #f9b42a !important;
+        transition: 0.3s ease;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #hero h1 {
+            font-size: 2.5rem;
+        }
+        #hero p {
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .admissions-section {
+            padding: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GTVC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="apply.html">Apply Online</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Admissions</h1>
+      <p>Start your academic journey with us by following these easy steps to apply.</p>
+      <a href="#admissions-info" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Admissions Information Section -->
+  <section id="admissions-info" class="py-5">
+    <div class="container">
+      <h2>Admissions Information</h2>
+      <p class="text-center">Begin your academic journey at Garsen Technical and Vocational College by following these steps to apply.</p>
+      
+      <div class="admissions-section">
+        <h4>Application Deadlines</h4>
+        <ul>
+          <li><strong>Spring Semester:</strong> January 10, 2024</li>
+          <li><strong>Fall Semester:</strong> August 20, 2024</li>
+        </ul>
+      </div>
+      
+      <div class="admissions-section">
+        <h4>Admission Criteria</h4>
+        <p>We assess applications based on the following criteria:</p>
+        <ul>
+          <li>Academic achievements</li>
+          <li>Personal essays</li>
+          <li>Letters of recommendation</li>
+          <li>Interview performance (if applicable)</li>
+        </ul>
+        <p>For detailed requirements, please visit our <a href="admissions-criteria.html">Admissions Portal</a>.</p>
+      </div>
+      
+      <div class="admissions-section">
+        <h4>How to Apply</h4>
+        <p>Follow these simple steps to apply:</p>
+        <ol>
+          <li>Complete the online application form.</li>
+          <li>Submit all required documents.</li>
+          <li>Pay the application fee.</li>
+          <li>Attend an interview (if required).</li>
+          <li>Receive your admission decision.</li>
+        </ol>
+        <a href="apply-now.html" class="btn btn-primary">Apply Now</a>
+      </div>
+      
+      <div class="admissions-section">
+        <h4>Required Documents</h4>
+        <ul>
+          <li>Completed application form</li>
+          <li>High school transcripts</li>
+          <li>Personal statement</li>
+          <li>Letters of recommendation</li>
+          <li>Proof of English proficiency (if applicable)</li>
+          <li>Passport-sized photographs</li>
+        </ul>
+      </div>
+      
+      <div class="admissions-section">
+        <h4>Fees & Scholarships</h4>
+        <p>Tuition fees vary by program. We offer a range of scholarships to support our students:</p>
+        <ul>
+          <li><strong>Merit-Based Scholarships:</strong> Awarded to students with outstanding academic achievements.</li>
+          <li><strong>Need-Based Scholarships:</strong> Designed to assist students who demonstrate financial need.</li>
+          <li><strong>Specialty Scholarships:</strong> For students pursuing specific fields of study.</li>
+        </ul>
+        <p>For more information on fees and scholarships, please visit our <a href="fees-scholarships.html">Fees & Scholarships</a> page.</p>
+      </div>
+      
+      <div class="admissions-section">
+        <h4>Frequently Asked Questions (FAQs)</h4>
+        <ul>
+          <li><strong>What are the admission requirements?</strong> Admission requirements vary by program. Please refer to the <a href="admissions-criteria.html">Admissions Portal</a> for detailed information.</li>
+          <li><strong>How do I apply for a scholarship?</strong> Scholarships are automatically considered with your application. You can also apply for specific scholarships through the <a href="scholarships.html">Scholarships</a> page.</li>
+          <li><strong>When will I receive my admission decision?</strong> Admission decisions are typically made within 4-6 weeks after the application deadline.</li>
+          <li><strong>Can I defer my admission?</strong> Yes, deferrals may be granted under certain circumstances. Please contact the admissions office for more information.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>Designed by JACQUES &copy; 2024 GTVC. All Rights Reserved.</p>
+    <p>
+      <a href="privacy.html" class="text-white">Privacy Policy</a> |
+      <a href="terms.html" class="text-white">Terms of Service</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
