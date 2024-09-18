@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life - Garsen Technical and Vocational College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+
+    #hero {
+      background-image: url('student-life-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      text-align: center;
+      padding: 120px 0;
+    }
+
+    #hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    #hero .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    #hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    #hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .icon-box {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .icon-box i {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .icon-box h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      #hero h1 {
+        font-size: 2.5rem;
+      }
+
+      #hero p {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="academics.html">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admissions.html">Admissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="student-life.html">Student Life</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apply.html">Apply Online</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Life at GTVC</h1>
+      <p>Discover the vibrant community and unforgettable experiences awaiting you here.</p>
+    </div>
+  </section>
+
+  <!-- Student Clubs & Organizations Section -->
+  <section id="clubs" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Clubs & Organizations</h2>
+      <p class="text-center">Join one of our many student-run clubs and organizations to build friendships, grow your skills, and make lasting memories.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-people-fill"></i>
+            <h4>Tech Innovators Club</h4>
+            <p>Collaborate with fellow students on exciting tech projects and competitions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-camera-fill"></i>
+            <h4>Photography Club</h4>
+            <p>Capture the beauty of campus life through the lens of your camera.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-heart-fill"></i>
+            <h4>Volunteers Association</h4>
+            <p>Give back to the community by participating in meaningful service projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Facilities Section -->
+  <section id="facilities" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Campus Facilities</h2>
+      <p class="text-center">State-of-the-art facilities that enhance your learning experience.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-building"></i>
+            <h4>Library</h4>
+            <p>A wide range of resources available for study and research in a peaceful environment.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-cpu"></i>
+            <h4>Computer Labs</h4>
+            <p>Equipped with the latest technology for all your coursework needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-basketball-fill"></i>
+            <h4>Sports Complex</h4>
+            <p>Engage in sports and fitness activities with access to top-notch facilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Student Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <p class="mb-4">"GTVC offers a community that fosters both academic and personal growth. I've learned so much and made lifelong friends."</p>
+            <footer class="blockquote-footer">John Doe, <cite title="Source Title">Computer Science Student</cite></footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <p class="mb-4">"The diverse range of clubs and activities have made my experience here unforgettable."</p>
+            <footer class="blockquote-footer">Jane Smith, <cite title="Source Title">Engineering Student</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>Designed by JACQUES &copy; 2024 GTVC. All Rights Reserved.</p>
+    <p>
+      <a href="#" class="text-white">Privacy Policy</a> |
+      <a href="#" class="text-white">Terms of Service</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
