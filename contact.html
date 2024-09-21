@@ -46,6 +46,26 @@
       margin-top: 1rem;
     }
 
+    .map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
     /* Custom responsive adjustments */
     @media (max-width: 768px) {
       #hero h1 {
@@ -96,23 +116,30 @@
     </div>
   </nav>
 
-  <!-- Contact Information Section -->
-  <section id="contact-info" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Contact Us</h2>
-      <p class="text-center">Find detailed information about our location, contact details, and working hours below.</p>
+  <!-- Location Section -->
+<div class="row contact-info">
+  <div class="col-md-6">
+    <h3>Our Location</h3>
+    <p>BOX 155-80201<br>
+    MINJILA, TANA RIVER COUNTY<br>
+    KENYA</p>
 
-      <!-- Location Section -->
-      <div class="row contact-info">
-        <div class="col-md-6">
-          <h3>Our Location</h3>
-          <p>BOX 155-80201<br>
-          MINJILA, TANA RIVER COUNTY<br>
-         KENYA</p>
-           <div class="embed-responsive">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15946.030975182033!2d40.10064436926492!3d-2.334226104780677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1817d36fc6b30d7f%3A0xc814fbdd22c63339!2sGarsen%20Technical%20and%20Professional%20College!5e0!3m2!1sen!2ske!4v1726908314421!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+    <!-- Responsive Map Container -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15946.030975182033!2d40.10064436926492!3d-2.334226104780677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1817d36fc6b30d7f%3A0xc814fbdd22c63339!2sGarsen%20Technical%20and%20Professional%20College!5e0!3m2!1sen!2ske!4v1726908314421!5m2!1sen!2ske" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!-- Contact Details Section -->
+  <div class="col-md-6">
+    <h3>Contact Details</h3>
+    <p><strong>Phone:</strong> +254790421407</p>
+    <p><strong>Email:</strong> <a href="mailto:garseninstitute@gmail.com">garseninstitute@gmail.com</a></p>
+    <p><strong>Admissions Email:</strong> <a href="mailto:admissions@college.edu">admissions@college.edu</a></p>
+    <p><strong>Support Email:</strong> <a href="mailto:support@college.edu">support@college.edu</a></p>
+  </div>
+</div>
+
 
         <!-- Contact Details Section -->
         <div class="col-md-6">
